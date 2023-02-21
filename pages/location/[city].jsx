@@ -6,6 +6,7 @@ import HourlyWeather from "@/components/HourlyWeather";
 import DailyWeather from "@/components/DailyWeather";
 import SearchBox from "@/components/SearchBox";
 import Link from "next/link";
+import Contact from "@/components/Contact";
 
 export async function getServerSideProps(context) {
   const city = getCityId(context.params.city);
@@ -65,9 +66,13 @@ function City({ hourlyWeather, currentWeather, dailyWeather, timezone, city }) {
       </Head>
       <div className="page-wrapper">
         <div className="container">
-          <Link href="/" className="back-link">
-            &larr; Home
-          </Link>
+          <div className="top-nav">
+            <Link href="/" className="back-link">
+              &larr; Home
+            </Link>
+            <Contact />
+          </div>
+
           <SearchBox placeholder="Search for another city . . ." />
           <CurrentWeather
             city={city}

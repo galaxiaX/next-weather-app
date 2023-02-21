@@ -1,10 +1,11 @@
 import Head from "next/head";
 import SearchBox from "@/components/SearchBox";
 import HomePage from "@/components/HomePage";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Weather App - Next</title>
       </Head>
@@ -13,7 +14,10 @@ export default function Home() {
           <HomePage />
           <SearchBox placeholder="Search for a city . . ." />
         </div>
+        <footer className="footer">
+          <Contact />
+        </footer>
       </div>
-    </div>
+    </>
   );
 }
