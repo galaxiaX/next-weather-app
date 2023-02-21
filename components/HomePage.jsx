@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 //import img
-import weatherLogo from "@/public/images/logo-w.png";
+import weatherLogo from "@/public/images/logo.png";
 
 function HomePage() {
   return (
