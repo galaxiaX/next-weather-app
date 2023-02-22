@@ -62,7 +62,10 @@ function City({ hourlyWeather, currentWeather, dailyWeather, timezone, city }) {
   return (
     <>
       <Head>
-        <title>{city.name} Weather - Next Weather App</title>
+        <title>{city.name} Weather - Next</title>
+        <meta name="description" content="Live Weather web app using NextJS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="page-wrapper">
         <div className="container">

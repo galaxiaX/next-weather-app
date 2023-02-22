@@ -7,7 +7,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Weather App - Next</title>
+        <title>Weather - Next</title>
+        <meta name="description" content="Live Weather web app using NextJS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="home">
         <div className="home-container">
