@@ -8,7 +8,7 @@ function HomePage() {
     <div className="title">
       <div className="title-container">
         <div className="title-icon">
-          <Image src={weatherLogo} alt="weather logo" />
+          <Image src={weatherLogo} alt="weather logo" priority />
         </div>
         <div className="title-text">
           <h1>Weather</h1>
