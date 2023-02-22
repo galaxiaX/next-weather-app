@@ -6,9 +6,11 @@ $f-extra-bold: 800;
 
 $dark: #242424;
 $primary: #4361ee;
-$night-gradient: linear-gradient(to bottom, #1f2b66, #4361ee);
+$night-gradient: linear-gradient(to bottom, #1f2b66, $primary);
 $secondary: #5e60ce;
+$secondary-hover: linear-gradient(to bottom, #1f2b66, $secondary);
 $tertiary: #22b0db;
+$tertiary-hover: #2291db;
 
 // global
 body {
@@ -367,6 +369,11 @@ h6 {
     padding: 10px;
     background-color: $secondary;
     color: #fff;
+    height: 186px;
+
+    &:hover {
+      background: $secondary-hover;
+    }
 
     img {
       width: 100%;
@@ -406,6 +413,10 @@ h6 {
     background-color: $tertiary;
     border-radius: 10px;
     color: #fff;
+
+    &:hover {
+      background: $tertiary-hover;
+    }
 
     &:not(:last-child) {
       margin-bottom: 15px;
@@ -508,7 +519,7 @@ h6 {
           z-index: 100;
           width: 30px;
           height: auto;
-          transition: transform 0.2s;
+          transition: transform 0.3s;
 
           &:hover {
             transform: scale(1.3);
