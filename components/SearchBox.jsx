@@ -44,7 +44,7 @@ function SearchBox({ placeholder }) {
 
   return (
     <div className="search">
-      <label className="search__icon" for="search-city">
+      <label className="search__icon" htmlFor="search-city">
         🔍
       </label>
       <input

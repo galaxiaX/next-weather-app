@@ -1,13 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import githubIcon from "@/public/images/github.png";
 
 function Contact() {
   return (
     <div className="contact">
       <div className="contact-container">
-        <a href="https://github.com/galaxiaX">
+        <Link href="https://github.com/galaxiaX" target="_blank">
           <Image src={githubIcon} alt="github" />
-        </a>
+        </Link>
       </div>
     </div>
   );
