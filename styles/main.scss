@@ -234,7 +234,7 @@ h6 {
       width: 100%;
 
       h1 {
-        font-size: 2rem;
+        font-size: clamp(1rem, 8vw, 2rem);
         margin: auto;
         overflow-wrap: break-word;
       }
@@ -401,7 +401,7 @@ h6 {
   &__title {
     opacity: 0.9;
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 8vw, 2rem);
 
     span {
       font-weight: $f-light;
