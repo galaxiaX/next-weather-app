@@ -22,7 +22,7 @@ function SearchBox({ placeholder }) {
 
     let matchingCities = [];
 
-    if (value.length > 0) {
+    if (value.length > 2) {
       for (let city of cities) {
         if (matchingCities.length >= 5) {
           break;
