@@ -7,7 +7,10 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-container">
-        <Link href="https://github.com/galaxiaX" target="_blank">
+        <Link
+          href="https://github.com/galaxiaX/next-weather-app"
+          target="_blank"
+        >
           <Image src={githubIcon} alt="github" />
         </Link>
       </div>
